@@ -1,5 +1,8 @@
 # FILM!
 
+# Завершенный проект на YandexCloud
+http://slow6rg3.nomorepartiessbs.ru/
+
 ## Установка
 
 ### MongoDB
@@ -32,8 +35,7 @@ MongoDB должна быть установлена и запущена.
 Для проверки отправьте тестовый запрос с помощью Postman или `curl`.
 
 Завершенный проект на YandexCloud
-
-http://130.193.45.139/
+http://slow6rg3.nomorepartiessbs.ru/
 
 
 
