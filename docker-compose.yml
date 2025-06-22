@@ -1,11 +1,5 @@
 services:
   frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-      args:
-        VITE_API_URL: /api/afisha
-        VITE_CDN_URL: /content/afisha
     image: ghcr.io/slow6r/frontend:latest
     container_name: frontend
     restart: always
@@ -15,9 +9,6 @@ services:
       - webnet
 
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
     image: ghcr.io/slow6r/backend:latest
     container_name: backend
     ports:
@@ -37,8 +28,6 @@ services:
       - webnet
 
   nginx:
-    build:
-      context: ./nginx
     image: ghcr.io/slow6r/nginx:latest
     container_name: nginx
     restart: always
