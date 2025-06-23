@@ -10,9 +10,7 @@ export function toTicketDetailsDto(
   return {
     film: filmId,
     session: schedule.id,
-    daytime: schedule.daytime.toISOString(),
     row: row,
     seat: seat,
-    price: schedule.price,
   };
 }
