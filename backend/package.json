@@ -7,6 +7,9 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
+    "migration:generate": "ts-node --transpile-only ./node_modules/typeorm/cli.js migration:generate -d src/database/data-source.ts",
+    "migration:run": "ts-node --transpile-only ./node_modules/typeorm/cli.js migration:run -d src/database/data-source.ts",
+    "migration:revert": "ts-node --transpile-only ./node_modules/typeorm/cli.js migration:revert -d src/database/data-source.ts",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
