@@ -1,4 +1,3 @@
-import { FilmEntity } from './film.entity';
 import {
   Column,
   Entity,
@@ -6,6 +5,7 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
+import { FilmEntity } from './film.entity';
 
 @Entity('schedules')
 export class ScheduleEntity {
@@ -36,4 +36,5 @@ export class ScheduleEntity {
   @ManyToOne(() => FilmEntity, (film) => film.schedule)
   @JoinColumn({ name: 'filmId' })
   film: FilmEntity;
+  orders: any;
 }
